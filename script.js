@@ -59,3 +59,5 @@ async function loadQuestions() {
   }
 }
 
+// Load questions when the page loads
+window.addEventListener('DOMContentLoaded', loadQuestions);
