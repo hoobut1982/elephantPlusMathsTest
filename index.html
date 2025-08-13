@@ -5,7 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Test Material</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
+
+
+
 </head>
+
+
+
 <body>
   <header>
     <h1>Welcome to Student Test Material</h1>
@@ -13,18 +27,10 @@
   </header>
 
   <main>
-    <section class="question-box">
-      <h2>Sample Question</h2>
-      <p>Which of the following is a prime number?</p>
-      <ul id="choices">
-        <li><button onclick="selectAnswer('A')">A. 4</button></li>
-        <li><button onclick="selectAnswer('B')">B. 6</button></li>
-        <li><button onclick="selectAnswer('C')">C. 7</button></li>
-        <li><button onclick="selectAnswer('D')">D. 9</button></li>
-li><button onclick="selectAnswer('E')">E. 10</button></li>
-      </ul>
-      <p id="feedback"></p>
-    </section>
+    <section id="question-container">
+  <!-- Questions will be loaded here -->
+</section>
+
   </main>
 
   <script src="script.js"></script>
